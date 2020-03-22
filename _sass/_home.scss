@@ -206,6 +206,10 @@ body#home {
                 padding-top: 0;
 
                 display: inline-block;
+                color: $white;
+                @include dark-mode {
+                    color: $black;
+                }
 
                 &:hover {
                     background: none;
