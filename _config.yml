@@ -1,0 +1,64 @@
+# Site settings
+
+title: "Not the Song Contest"
+
+description: "Enabling a socially distant Song Contest"
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://not-the-song-contest.johnpe.art"
+author: "John Peart"
+
+# Images and assets
+image-path: "/assets/images"
+css-path: "/assets/styles"
+js-path: "/assets/scripts"
+
+hero-images-path: "/assets/images/hero"
+social-images-path: "/assets/images/social"
+post-images-path: "/assets/images/posts"
+
+logo-png: "/assets/images/site/logo.png"
+logo-svg: "/assets/images/site/logo.svg"
+four-oh-four-svg: "/assets/images/site/four-oh-four.svg"
+
+social-media-image: "/assets/images/site/social-media.png"
+
+touch: "/assets/images/site/touch.png"
+pinned: "/assets/images/site/pinned.svg"
+pinned-colour: "#009fe3"
+logo-favicon-small: "/assets/images/site/favicon-16x16.png"
+logo-favicon-medium: "/assets/images/site/favicon-32x32.png"
+logo-favicon-large: "/assets/images/site/favicon-96x96.png"
+
+
+# Social settings
+twitter-username: "johnpeart" # Twitter handle i.e. joebloggs
+github-username:  "johnpeart"
+google-site-verification: "DaqGCZ6cZIqm7q_nVSnOzjJmFFjbRfW2X7FDzpQDQZk" # GSV code; proves domain ownership
+
+#Analytics
+disable-analytics: false # Switch to "false" to start GA logging
+google-analytics: "UA-27553664-1" # GA ID code
+
+##########################
+### GOOGLE SHEETS REFS ###
+##########################
+
+# You must enter a Google sheets reference here or the scores won't load
+
+spreadsheet: "1Q4fjQYrM-gH_PcIgXNTD-hViabitU8r1RBHQvqE6tN8"
+
+# You must enter a link to the Google Form here or the voting won't work
+
+votelink: "https://forms.gle/yjfj1HPQqAg38Zqz6"
+
+# Plugins and build settings
+
+permalink: pretty
+markdown: kramdown
+future: false
+sass:
+    sass_dir: _sass    
+
+# plugins:
+## - jekyll-redirect-from

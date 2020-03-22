@@ -1,0 +1,238 @@
+// Home page styles
+
+body#home {
+
+    header {
+        @include sm-down {
+            padding-top: 50px;
+        }
+        @include md-up {
+            padding-top: 			100px;
+        }
+	}
+
+	section {
+		padding-top: 			100px;
+		padding-bottom: 		100px;
+	}
+
+	div.logo {
+
+		display: 		inline-block;
+		position: 		relative;
+
+		@include xs {
+			width: 			100px;
+			height: 		100px;
+		}
+
+		@include sm {
+			width: 			100px;
+			height: 		100px;
+		}
+
+		@include md {
+			width: 			130px;
+			height: 		130px;
+		}
+
+		@include lg {
+			width: 			150px;
+			height: 		150px;
+		}
+
+		@include xl {
+			width: 			175px;
+			height: 		175px;
+        }
+        
+        div.logo--scorebar {
+
+			display: 	block;
+			position: 	relative;
+
+			float: 		left;
+
+			@include clearfix;
+
+			@include xs {
+                width: 			100px;
+                height: 		15px;
+
+                margin-bottom:  5px;
+            }
+    
+            @include sm {
+                width: 			100px;
+                height: 		15px;
+
+                margin-bottom:  5px;
+            }
+    
+            @include md {
+                width: 			130px;
+                height: 		20px;
+
+                margin-bottom:  5px;
+            }
+    
+            @include lg {
+                width: 			150px;
+                height: 		25px;
+
+                margin-bottom:  5px;
+            }
+    
+            @include xl {
+                width: 			175px;
+                height: 		30px;
+
+                margin-bottom:  5px;
+            }
+            
+            @include clearfix;
+
+			&::before {
+				display: inline-block;
+                position: absolute;
+                
+                left: 0;
+                right: auto;
+
+                height: 100%;
+
+                @include xs {
+                    width: 			15px;
+                }
+        
+                @include sm {
+                    width: 			15px;
+                }
+        
+                @include md {
+                    width: 			20px;
+                }
+        
+                @include lg {
+                    width: 			25px;
+                }
+        
+                @include xl {
+                    width: 			30px;
+                }
+
+				background: $cyan;
+
+				content: "";
+			}
+
+			&::after {
+				display: inline-block;
+				position: absolute;
+
+                height: 100%;
+                width: 80%;
+                
+                right: 0;
+                left: auto;
+
+				background: $cyan;
+
+				content: "";
+			}
+
+			&:nth-child(1) {
+                opacity: 1;
+			}
+
+			&:nth-child(2) {
+                opacity: 0.8;
+			}
+
+			&:nth-child(3) {
+                opacity: 0.6;
+			}
+
+			&:nth-child(4) {
+                opacity: 0.4;
+			}
+
+			&:nth-child(5) {
+                opacity: 0.2;
+			}
+
+		}
+
+    }
+    
+    div#links {
+        display: grid;
+
+        @include sm-down {
+            grid-template-columns: auto;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: "with" "without" "vote";
+        }
+        @include md-up {
+            grid-template-columns:  1fr 1fr 1fr;
+            grid-template-rows:     1fr;
+            grid-template-areas:    "with without vote";
+        }
+
+        grid-gap: 30px;
+
+
+        div.link {
+            position: relative;
+            display: block;
+            
+            background: $cyan;
+
+            padding: 20px;
+            margin: 0;
+
+            &.with-video {
+                grid-area: with;
+            }
+            &.without-video {
+                grid-area: without;
+            }
+            &.vote {
+                grid-area: vote;
+            }
+
+            a {
+                @extend h2;
+                padding-top: 0;
+
+                display: inline-block;
+
+                &:hover {
+                    background: none;
+                    outline: none;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            &:hover,
+            &:focus {
+                color:      $white;
+                background: $black;
+                @include dark-mode {
+                    color: $cyan;
+                    background: $white;
+                }
+                outline:    none;
+            }
+        }
+    }
+    
+}

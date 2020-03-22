@@ -1,0 +1,48 @@
+// Mixins
+
+// Animations
+
+/* Animation Keyframes*/
+
+@mixin keyframes($name) {
+	@keyframes #{$name} {
+		@content
+	}
+
+	@-moz-keyframes #{$name} {
+		@content
+	}
+
+	@-webkit-keyframes #{$name} {
+		@content
+	}
+
+	@-o-keyframes #{$name} {
+		@content
+	}
+}
+
+@mixin animation($variables) {
+	animation: 			$variables;
+	-moz-animation: 	$variables;
+	-webkit-animation: 	$variables;
+	-o-animation: 		$variables;
+}
+
+@include keyframes(scroll) {
+	0% {
+		margin-top: 0;
+	}
+	3% {
+		margin-top: 0;
+	}
+	50% {
+		margin-top: -3000px;
+	}
+	53% {
+		margin-top: -3000px;
+	}
+	100% {
+		margin-top: 0;
+	}
+}

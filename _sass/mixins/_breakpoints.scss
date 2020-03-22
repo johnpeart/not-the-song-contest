@@ -1,0 +1,236 @@
+// Mixins
+
+// Breakpoints
+
+// ORIENTATION
+
+@mixin xs($orientation) {
+
+	@if $orientation == 'portrait' {
+
+		@media 	only screen  
+				and (orientation: portrait) 
+				and (max-width: $sm - 1px) {
+
+					@content;
+
+				}
+
+	} 
+	
+	@else if $orientation == 'landscape' {
+
+		@media 	only screen  
+				and (orientation: landscape) 
+				and (max-width: $sm - 1px) {
+
+					@content;
+					
+				}
+
+	}
+
+}
+
+@mixin sm($orientation) {
+
+	@if $orientation == 'portrait' {
+
+		@media 	only screen  
+				and (orientation: portrait) 
+				and (min-width: $sm) 
+				and (max-width: $md - 1px) {
+
+					@content;
+
+				}
+
+	} 
+	
+	@else if $orientation == 'landscape' {
+
+		@media 	only screen  
+				and (orientation: landscape) 
+				and (min-width: $sm) 
+				and (max-width: $md - 1px) {
+
+					@content;
+					
+				}
+
+	}
+
+}
+
+@mixin md($orientation) {
+
+	@if $orientation == 'portrait' {
+
+		@media 	only screen  
+				and (orientation: portrait) 
+				and (min-width: $md) 
+				and (max-width: $lg - 1px) {
+
+					@content;
+
+				}
+
+	} 
+	
+	@else if $orientation == 'landscape' {
+
+		@media 	only screen  
+				and (orientation: landscape) 
+				and (min-width: $md) 
+				and (max-width: $lg - 1px) {
+
+					@content;
+					
+				}
+
+	}
+
+}
+
+@mixin lg($orientation) {
+
+	@if $orientation == 'portrait' {
+
+		@media 	only screen  
+				and (orientation: portrait) 
+				and (min-width: $lg) 
+				and (max-width: $xl - 1px) {
+
+					@content;
+
+				}
+
+	} 
+	
+	@else if $orientation == 'landscape' {
+
+		@media 	only screen  
+				and (orientation: landscape) 
+				and (min-width: $lg) 
+				and (max-width: $xl - 1px) {
+
+					@content;
+					
+				}
+
+	}
+
+}
+
+@mixin xl($orientation) {
+
+	@if $orientation == 'portrait' {
+
+		@media 	only screen  
+				and (orientation: portrait) 
+				and (min-width: $xl) {
+
+					@content;
+
+				}
+
+	} 
+	
+	@else if $orientation == 'landscape' {
+
+		@media 	only screen  
+				and (orientation: landscape) 
+				and (min-width: $xl) {
+
+					@content;
+					
+				}
+
+	}
+
+}
+
+// BREAKPOINT ONLY 
+
+@mixin xs {
+	@media 	only screen 
+			and (max-width: $sm - 1px) {
+				@content;
+			}
+}
+
+@mixin sm {
+	@media 	only screen 
+			and (min-width: $sm)
+			and (max-width: $md - 1px) {
+				@content;
+			}
+}
+
+@mixin md {
+	@media 	only screen 
+			and (min-width: $md)
+			and (max-width: $lg - 1px) {
+				@content;
+			}
+}
+
+@mixin lg {
+	@media 	only screen 
+			and (min-width: $lg)
+			and (max-width: $xl - 1px) {
+				@content;
+			}
+}
+
+
+@mixin xl {
+	@media 	only screen 
+			and (min-width: $xl) {
+				@content;
+			}
+}
+
+// AND UP
+
+@mixin sm-up {
+	@media 	only screen 
+			and (min-width: $sm) {
+				@content;
+			}
+}
+
+@mixin sm-down {
+	@media 	only screen 
+			and (max-width: $md - 1px) {
+				@content;
+			}
+}
+
+@mixin md-up {
+	@media 	only screen 
+			and (min-width: $md) {
+				@content;
+			}
+}
+
+@mixin md-down {
+	@media 	only screen 
+			and (max-width: $lg - 1px) {
+				@content;
+			}
+}
+
+@mixin lg-up {
+	@media 	only screen 
+			and (min-width: $lg) {
+				@content;
+			}
+}
+
+@mixin lg-down {
+	@media 	only screen 
+			and (max-width: $xl - 1px) {
+				@content;
+			}
+}
