@@ -102,8 +102,18 @@ function getData() {
             metadataOutput += '<span class="control-center--artist">' + metadata[3] + '</span>';
             metadataOutput += '<span class="control-center--title">' + metadata[4] + '</span>';
 
+            rankingsOutput = metadata[5];
+
             $('#control-center--messages').html(messagesOutput);
             $('#control-center--metadata').html(metadataOutput);
+
+            if (rankingsOutput == "No rankings") {
+                $('#scores').addClass("no-rankings");
+                $('#scores').removeClass("with-rankings");
+            } else if (rankingsOutput == "With rankings") {
+                $('#scores').addClass("with-rankings");
+                $('#scores').removeClass("no-rankings");
+            }
             
         })
 

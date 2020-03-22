@@ -56,6 +56,9 @@ body[id^="app-"] {
             }
         }
 
+    }
+    
+    section.with-rankings div.scores--entry {
         &.rank-order-1 {
             background:     $gold;
             color:          $white;
@@ -95,7 +98,6 @@ body[id^="app-"] {
                 }
             }
         }
-
     }
 
     div.grid-entry--running-order {
