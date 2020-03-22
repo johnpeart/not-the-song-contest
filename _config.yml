@@ -48,9 +48,21 @@ google-analytics: "UA-27553664-1" # GA ID code
 
 spreadsheet: "1Q4fjQYrM-gH_PcIgXNTD-hViabitU8r1RBHQvqE6tN8"
 
+#########################
+### GOOGLE FORMS REFS ###
+#########################
+
 # You must enter a link to the Google Form here or the voting won't work
 
 votelink: "https://forms.gle/yjfj1HPQqAg38Zqz6"
+
+##########################
+### YOUTUBE EMBED REFS ###
+##########################
+
+# You must enter a YouTube URL here to make the video work
+
+video-embed-link: "https://www.youtube.com/embed/videoseries?list=PLmWYEDTNOGUL69D2wj9m2onBKV2s3uT5Y"
 
 # Plugins and build settings
 
