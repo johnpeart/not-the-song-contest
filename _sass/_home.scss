@@ -143,23 +143,28 @@ body#home {
 
 			&:nth-child(1) {
                 opacity: 1;
+                animation: fade-first-child 4s linear 1s infinite;
 			}
 
 			&:nth-child(2) {
                 opacity: 0.8;
+                animation: fade-second-child 4s linear 1s infinite;
 			}
 
 			&:nth-child(3) {
                 opacity: 0.6;
+                animation: fade-third-child 4s linear 1s infinite;
 			}
 
 			&:nth-child(4) {
                 opacity: 0.4;
+                animation: fade-fourth-child 4s linear 1s infinite;
 			}
 
 			&:nth-child(5) {
                 opacity: 0.2;
-			}
+                animation: fade-fifth-child 4s linear 1s infinite;
+            }
 
 		}
 
