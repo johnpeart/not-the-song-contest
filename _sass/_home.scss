@@ -173,16 +173,9 @@ body#home {
     div#links {
         display: grid;
 
-        @include sm-down {
-            grid-template-columns: auto;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-areas: "with" "without" "vote";
-        }
-        @include md-up {
-            grid-template-columns:  1fr 1fr 1fr;
-            grid-template-rows:     1fr;
-            grid-template-areas:    "with without vote";
-        }
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "with" "without" "vote";
 
         grid-gap: 30px;
 
@@ -244,4 +237,30 @@ body#home {
         }
     }
     
+    section#navigation {
+
+        display: grid;
+
+        @include xs {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto;
+        }
+
+        @include sm-up {
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto;
+        }
+
+        grid-gap: 60px;
+
+    }
+
+    div#preamble {
+
+        h2 {
+            padding-top: 0;
+        }
+
+    }
+
 }
