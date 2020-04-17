@@ -202,6 +202,9 @@ body#app-no-video {
         }
 
         background-image: url('../images/site/header.svg');
+        @include dark-mode {
+            background-image: url('../images/site/header-darkmode.svg');
+        }
         background-size: contain;
         background-repeat: no-repeat;
 
@@ -480,6 +483,9 @@ body#app-with-video {
         }
 
         background-image: url('../images/site/header.svg');
+        @include dark-mode {
+            background-image: url('../images/site/header-darkmode.svg');
+        }
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
