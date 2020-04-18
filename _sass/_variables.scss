@@ -435,5 +435,5 @@ $font-family-sans-serif:      		"JP", -apple-system, BlinkMacSystemFont, "Helvet
 $font-family-monospace:       		"JP", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            		$font-family-sans-serif !default;
 
-$font-feature-settings:				"ss02", "tnum", "liga", "zero", "kern";
+$font-feature-settings:				none;
 $sup-font-feature-settings:			"ss02", "tnum", "liga", "zero", "kern", "frac";
