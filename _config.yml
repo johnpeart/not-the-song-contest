@@ -1,4 +1,4 @@
-# Site settings
+# Site setting
 
 title: "Not the Song Contest"
 
@@ -73,4 +73,4 @@ sass:
     sass_dir: _sass    
 
 # plugins:
-## - jekyll-redirect-from
+- jekyll-redirect-from
