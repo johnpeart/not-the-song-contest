@@ -72,5 +72,5 @@ future: false
 sass:
     sass_dir: _sass    
 
-# plugins:
+plugins:
 - jekyll-redirect-from
