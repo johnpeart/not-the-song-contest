@@ -302,16 +302,16 @@ body#app-with-video {
             }
 
             @include md {
-                font-size: 		$p-font-size-base-md * 0.8;
-		        line-height: 	$p-line-height-base-md * 0.8;
+                font-size: 		$p-font-size-base-md * 0.7;
+		        line-height: 	$p-line-height-base-md * 0.7;
             }   
             @include lg {
-                font-size: 		$p-font-size-base-lg * 0.8;
-		        line-height: 	$p-line-height-base-lg * 0.8;
+                font-size: 		$p-font-size-base-lg * 0.7;
+		        line-height: 	$p-line-height-base-lg * 0.7;
             } 
             @include xl {
-                font-size: 		$p-font-size-base-xl * 0.8;
-		        line-height: 	$p-line-height-base-xl * 0.8;
+                font-size: 		$p-font-size-base-xl * 0.7;
+		        line-height: 	$p-line-height-base-xl * 0.7;
             }
 
         }
