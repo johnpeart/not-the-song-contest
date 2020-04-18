@@ -129,10 +129,10 @@ body[id^="app-"] {
             font-size: 20px;
         }
         @include lg {
-            font-size: 30px;
+            font-size: 26px;
         }
         @include xl {
-            font-size: 35px;
+            font-size: 30px;
         }
     }
 
@@ -147,10 +147,10 @@ body[id^="app-"] {
             font-size: 30px;
         }
         @include lg {
-            font-size: 45px;
+            font-size: 40px;
         }
         @include xl {
-            font-size: 60px;
+            font-size: 55px;
         }
 
         font-weight: bold;
