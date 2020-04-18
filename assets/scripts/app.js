@@ -90,17 +90,25 @@ function getData() {
 
             console.log(metadata);
 
+            // MESSAGES
+
             var messagesOutput = "";
-            var metadataOutput = "";
 
             messagesOutput += '<span class="control-center--message">Messages</span>';
             messagesOutput += '<span class="control-center--message-title">' + metadata[0] + '</span>';
             messagesOutput += '<span class="control-center--message-content">' + metadata[1] + '</span>';
             
+
+            // ARTIST INFO
+
+            var metadataOutput = "";
+
             metadataOutput += '<span class="control-center--now-playing">Now playing</span>';
             metadataOutput += '<span class="control-center--country"><strong>' + metadata[2] + '</strong></span>';
             metadataOutput += '<span class="control-center--artist">' + metadata[3] + '</span>';
             metadataOutput += '<span class="control-center--title">' + metadata[4] + '</span>';
+
+            // RANKINGS ON OR OFF
 
             rankingsOutput = metadata[5];
 
@@ -113,6 +121,18 @@ function getData() {
             } else if (rankingsOutput == "With rankings") {
                 $('#scores').addClass("with-rankings");
                 $('#scores').removeClass("no-rankings");
+            }
+
+            // FIREWORKS 
+
+            fireworksStatus = metadata[7];
+
+            if (fireworksStatus == "TRUE") {
+                $('#fireworks').addClass("on");
+                $('#fireworks').removeClass("off");
+            } else if (fireworksStatus == "FALSE") {
+                $('#fireworks').addClass("off");
+                $('#fireworks').removeClass("on");
             }
             
         })
@@ -185,22 +205,50 @@ function updateData() {
                     metadata.push(entry[i+1].content.$t);
                 }
     
-                console.log(metadata);
-    
+                // MESSAGES
+
                 var messagesOutput = "";
-                var metadataOutput = "";
     
                 messagesOutput += '<span class="control-center--message">Messages</span>';
                 messagesOutput += '<span class="control-center--message-title">' + metadata[0] + '</span>';
                 messagesOutput += '<span class="control-center--message-content">' + metadata[1] + '</span>';
                 
+    
+                // ARTIST INFO
+    
+                var metadataOutput = "";
+    
                 metadataOutput += '<span class="control-center--now-playing">Now playing</span>';
                 metadataOutput += '<span class="control-center--country"><strong>' + metadata[2] + '</strong></span>';
                 metadataOutput += '<span class="control-center--artist">' + metadata[3] + '</span>';
                 metadataOutput += '<span class="control-center--title">' + metadata[4] + '</span>';
     
+                // RANKINGS ON OR OFF
+    
+                rankingsOutput = metadata[5];
+    
                 $('#control-center--messages').html(messagesOutput);
                 $('#control-center--metadata').html(metadataOutput);
+    
+                if (rankingsOutput == "No rankings") {
+                    $('#scores').addClass("no-rankings");
+                    $('#scores').removeClass("with-rankings");
+                } else if (rankingsOutput == "With rankings") {
+                    $('#scores').addClass("with-rankings");
+                    $('#scores').removeClass("no-rankings");
+                }
+    
+                // FIREWORKS 
+    
+                fireworksStatus = metadata[7];
+    
+                if (fireworksStatus == "TRUE") {
+                    $('#fireworks').addClass("on");
+                    $('#fireworks').removeClass("off");
+                } else if (fireworksStatus == "FALSE") {
+                    $('#fireworks').addClass("off");
+                    $('#fireworks').removeClass("on");
+                }
                 
             })
 
