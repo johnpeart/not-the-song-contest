@@ -34,7 +34,7 @@ logo-favicon-large: "/assets/images/site/favicon-96x96.png"
 # Social settings
 twitter-username: "johnpeart" # Twitter handle i.e. joebloggs
 github-username:  "johnpeart"
-google-site-verification: "DaqGCZ6cZIqm7q_nVSnOzjJmFFjbRfW2X7FDzpQDQZk" # GSV code; proves domain ownership
+google-site-verification: "1UZklb5El-4ioKRyCtavuQXO_jevQ7Tt9DnyBs4Nihww" # GSV code; proves domain ownership
 
 #Analytics
 disable-analytics: false # Switch to "false" to start GA logging
@@ -54,7 +54,7 @@ spreadsheet: "1Q4fjQYrM-gH_PcIgXNTD-hViabitU8r1RBHQvqE6tN8"
 
 # You must enter a link to the Google Form here or the voting won't work
 
-votelink: "https://forms.gle/yjfj1HPQqAg38Zqz6"
+votelink: "https://forms.gle/MdE4JUMnSDXDubpz6"
 
 ##########################
 ### YOUTUBE EMBED REFS ###
